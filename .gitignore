@@ -1,0 +1,33 @@
+# No PDFs in git (company reports and SEBI rulebook). The manifests list where to get each one.
+*.pdf
+*.part
+
+# Personal notes and plans stay local; only README files are published
+*.md
+!README.md
+
+# Secrets
+.env
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Runtime data the app will create (database, vector index, uploads)
+backend/storage/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log

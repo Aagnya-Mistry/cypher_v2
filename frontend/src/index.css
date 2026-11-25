@@ -1,0 +1,8 @@
+/* Plain black and white for now. Styling comes later. */
+body {
+  margin: 0;
+  padding: 16px;
+  background: #fff;
+  color: #000;
+  font-family: system-ui, sans-serif;
+}
