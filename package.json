@@ -1,0 +1,13 @@
+{
+  "name": "cypher-v2",
+  "private": true,
+  "description": "Runs the FastAPI backend and the React frontend together for local development",
+  "scripts": {
+    "start": "concurrently --kill-others -n api,web -c blue,green \"npm:start:api\" \"npm:start:web\"",
+    "start:api": "cd backend && .venv\\Scripts\\python -m uvicorn app.main:app --reload",
+    "start:web": "npm --prefix frontend run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}
