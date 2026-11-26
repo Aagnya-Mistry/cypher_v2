@@ -3,6 +3,8 @@ uvicorn[standard]>=0.32
 pypdf>=5.0
 pydantic-settings>=2.4
 pyjwt[crypto]>=2.9
+supabase>=2.10
+python-multipart>=0.0.9
 
 # tests
 pytest>=8.0

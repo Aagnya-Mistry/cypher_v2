@@ -13,6 +13,10 @@ class Settings(BaseSettings):
 
     supabase_url: str
     supabase_jwt_secret: str = ""  # legacy projects only; empty means verify with Supabase's public keys
+    # Server-only key for Storage and the database. Never sent to the browser.
+    supabase_secret_key: str = ""
+    storage_bucket: str = "documents"
+    max_upload_mb: int = 50  # Supabase free plan caps a single stored file at 50 MB
     frontend_origin: str = "http://localhost:5173"
     groq_api_key: str = ""
 
